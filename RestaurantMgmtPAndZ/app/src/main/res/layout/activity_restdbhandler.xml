@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".restdbhandler">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter name..."
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etname"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter address..."
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etaddress"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: "
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact..."
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etcontact"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="INSERT"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonInsert"
+            android:onClick="insertClick"
+            />
+        <Button
+            android:text="UPDATE"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonUpdate"
+            android:onClick="updateClick"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="DELETE"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDelete"
+            android:onClick="deleteClick"
+            />
+        <Button
+            android:text="VIEW"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonView"
+            android:onClick="viewClick"
+            />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv1"
+            />
+    </ScrollView>
+
+</TableLayout>

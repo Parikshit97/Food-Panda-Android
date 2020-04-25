@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">RestaurantMgmtPAndZ</string>
+    <string name="slogan">Finger Licking good\.</string>
+    <string-array name="resturants">
+        <item>Sizzler Ranch</item>
+        <item>Barbeque Nation</item>
+        <item>McDonalds</item>
+        <item>KFC</item>
+        <item>Ginger Garlic</item>
+        <item>Barista</item>
+        <item>Egg Factory</item>
+        <item>Froth On Top</item>
+        <item>Keventers</item>
+    </string-array>
+    <string-array name="nonveg">
+        <item>Friendship Bucket</item>
+        <item>Double Taco</item>
+        <item>Golden Delight Burger</item>
+        <item>Peri Peri</item>
+        <item>Zinger Bucket</item>
+    </string-array>
+    <string-array name="veg">
+        <item>Rice Bowl</item>
+        <item>Wrap</item>
+        <item>Musty Mushroom</item>
+    </string-array>
+    <string-array name="beverage">
+        <item>Pepsi</item>
+        <item>Mirinda</item>
+        <item>Krushers</item>
+        <item>Sprite</item>
+        <item>Mountain Dew</item>
+    </string-array>
+</resources>

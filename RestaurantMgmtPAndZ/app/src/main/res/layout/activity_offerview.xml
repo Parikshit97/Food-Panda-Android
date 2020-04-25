@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".offerview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="4dp"
+        android:id="@+id/card_view1"
+        > <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Avail 10%discount in Barbeque Nation"
+            />
+        </TableRow>
+
+    </TableLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="4dp"
+        android:id="@+id/card_view2"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Avail 10% discount on non-veg items" />
+            </TableRow>
+
+    </TableLayout> </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="4dp"
+            android:id="@+id/card_view3"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Avail 10% discount on non-veg items" />
+                </TableRow>
+
+            </TableLayout> </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="4dp"
+            android:id="@+id/card_view4"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Avail 10% discount on non-veg items" />
+                </TableRow>
+
+            </TableLayout> </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="4dp"
+            android:id="@+id/card_view5"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Avail 10% discount on non-veg items" />
+                </TableRow>
+
+            </TableLayout> </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="4dp"
+            android:id="@+id/card_view6"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Avail 10% discount on non-veg items" />
+                </TableRow>
+
+            </TableLayout> </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup3"
+    tools:context=".activity_sign_up">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            />
+
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textColorHint="@android:color/white"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No.:"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1234567890"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMail:"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:text="abc@xyz.com"
+            android:textSize="30sp"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:id="@+id/editEmail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP:"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:text="OTP here..."
+            android:textStyle="italic"
+            android:textSize="34sp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:id="@+id/otp"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnGenerateOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="49dp"
+        android:onClick="generateOTP"
+        android:shadowColor="@android:color/black"
+        android:text="Generate OTP"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:shadowColor="@android:color/black"
+        android:onClick="register"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

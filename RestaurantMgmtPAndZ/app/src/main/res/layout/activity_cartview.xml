@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cartview">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="name here..."
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etname"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No.:"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="contact here..."
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etcontact"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="item deletion..."
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etdelete"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="qty update"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:id="@+id/etupdate"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="DELETE"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDelete"
+            android:onClick="deleteClick"
+            />
+        <Button
+            android:text="VIEW"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonView"
+            android:onClick="viewClick"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="Update"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatebutton"
+            android:onClick="updateqty"
+            />
+        <Button
+            android:text="Bill"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/billbutton"
+            android:onClick="adbview"
+            />
+    </TableRow>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv1"
+            />
+    </ScrollView>
+
+
+
+</TableLayout>

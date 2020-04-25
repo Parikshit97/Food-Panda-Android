@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KFCtablehall">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kfc3"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:text="See Vacancy"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="adbview2"
+            />
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Enter Hall No.: "
+        android:textSize="25sp"
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="hall here..."
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:id="@+id/ethallno"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Enter Table No.: "
+        android:textSize="25sp"
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="table here..."
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:id="@+id/ettableno"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Visiting Date: "
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:id="@+id/etdate"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="OPEN DATE TIME PICKER"
+        android:textSize="15sp"
+        android:id="@+id/datetimepicker"
+        android:onClick="opendatetimepicker"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="OK"
+        android:textSize="15sp"
+        android:id="@+id/addcartbutton"
+        android:onClick="okgeneratetoast"
+        />
+
+
+</TableLayout>

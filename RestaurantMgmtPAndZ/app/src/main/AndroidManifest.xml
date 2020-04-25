@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parikshitnarang.restaurantmgmtpandz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_sign_in" />
+        <activity android:name=".useroptions" />
+        <activity android:name=".feedback" />
+        <activity android:name=".activity_sign_up" />
+        <activity android:name=".admin" />
+        <activity android:name=".order" />
+        <activity android:name=".KFC" />
+        <activity android:name=".cartview" />
+        <activity android:name=".custdbhandler" />
+        <activity android:name=".pricedbhandler" />
+        <activity android:name=".restdbhandler" />
+        <activity android:name=".orderdbhandler" />
+        <activity android:name=".bill" />
+        <activity android:name=".resturantinfo" />
+        <activity android:name=".offerview" />
+        <activity android:name=".tablehall" />
+        <activity android:name=".KFCtablehall" />
+        <activity android:name=".bookingview"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/woodbg"
+    tools:context=".admin">
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="CUSTOMER DATABASE"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/custdb"
+        android:onClick="custdatabase"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TABLE/HALL DATABASE"
+        android:textSize="25sp"
+        android:id="@+id/orderdb"
+        android:onClick="orderdatabse"
+        android:layout_below="@+id/custdb"
+        />
+    <Button
+        android:text="RESTAURANT DATABASE"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/restdb"
+        android:onClick="restdatabse"
+        android:layout_below="@+id/orderdb"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRICE DATABASE"
+        android:textSize="25sp"
+        android:id="@+id/pricedb"
+        android:onClick="pricedatabase"
+        android:layout_below="@+id/restdb"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOKING DATABASE"
+        android:textSize="25sp"
+        android:id="@+id/bookdb"
+        android:onClick="bookingdb"
+        android:layout_below="@+id/pricedb"
+        />
+
+</RelativeLayout>
