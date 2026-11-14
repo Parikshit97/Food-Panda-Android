@@ -55,10 +55,10 @@ Captured from the Android app running on a Pixel 3a emulator with Android 15. Se
 
 ## Development
 
-The Android project is located in `RestaurantMgmtPAndZ`. Use JDK 17 or 21 and Android SDK Platform 34. The project uses Java, Android Gradle Plugin 8.5.2, and Gradle 8.9. Android 5.0 or later is required.
+The Android project is located in `DineOps`. Use JDK 17 or 21 and Android SDK Platform 34. The project uses Java, Android Gradle Plugin 8.5.2, and Gradle 8.9. Android 5.0 or later is required.
 
 ```sh
-cd RestaurantMgmtPAndZ
+cd DineOps
 ./gradlew assembleDebug assembleDebugAndroidTest lintDebug
 ```
 
@@ -68,9 +68,9 @@ To refresh the screenshots with a running emulator:
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 adb shell am instrument -w -e phase after \
-  com.example.parikshitnarang.restaurantmgmtpandz.test/com.example.parikshitnarang.restaurantmgmtpandz.ScreenshotRunner
+  com.dineops.app.test/com.dineops.app.ScreenshotRunner
 cd ..
-adb pull /sdcard/Android/data/com.example.parikshitnarang.restaurantmgmtpandz/files/screenshots/after screenshots/
+adb pull /sdcard/Android/data/com.dineops.app/files/screenshots/after screenshots/
 ```
 
 ## Current scope
