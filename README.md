@@ -38,7 +38,7 @@ Captured from the Android app running on a Pixel 3a emulator with Android 15. Se
 
 |   |   |
 | --- | --- |
-| **Contact information**<br>[<img src="screenshots/after/20-contact-dialog.png" alt="DineOps: Contact information" width="240">](screenshots/after/20-contact-dialog.png) | **Feedback acknowledgement**<br>[<img src="screenshots/after/21-feedback-dialog.png" alt="DineOps: Feedback acknowledgement" width="240">](screenshots/after/21-feedback-dialog.png) |
+| **Contact information**<br>[<img src="screenshots/after/20-contact-information.png" alt="DineOps: Contact information" width="240">](screenshots/after/20-contact-information.png) | **Feedback acknowledgement**<br>[<img src="screenshots/after/21-feedback-dialog.png" alt="DineOps: Feedback acknowledgement" width="240">](screenshots/after/21-feedback-dialog.png) |
 
 <details>
 <summary>Additional sections of scrolling screens</summary>

@@ -54,7 +54,7 @@ public class ScreenshotRunner extends Instrumentation {
                     runOnMainSync(() -> activity.findViewById(R.id.buttonContactUs).performClick());
                     waitForIdleSync();
                     SystemClock.sleep(350);
-                    capture(directory, "20-contact-dialog.png");
+                    capture(directory, "20-contact-information.png");
                 }
                 if (phase.equals("after") && screens[i].equals("feedback")) {
                     runOnMainSync(() -> ((feedback) activity).dialogopenforsubmission(null));
