@@ -28,9 +28,9 @@ public class restdbhandler extends UiActivity {
         String contactet=contact.getText().toString();
         boolean isInserted= rdba.insertData(nameet,addresset,contactet);
         if(isInserted){
-            Toast.makeText(this,"Restaurant info added!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_1),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Restaurant info adding failed!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_2),Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -50,9 +50,9 @@ public class restdbhandler extends UiActivity {
         EditText name=(EditText)findViewById(R.id.etname);
         Integer res=rdba.deleteData(name.getText().toString());
         if(res!=0){
-            Toast.makeText(this,"Resturant info deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_3),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Restaurant info not deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_4),Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -63,7 +63,7 @@ public class restdbhandler extends UiActivity {
         Cursor res=rdba.getAllData();
         while(res.moveToNext()){
             buffer.append("Restaurant: "+res.getString(0)+"\n");
-            buffer.append("Contact: "+res.getString(2)+"\n");
+            buffer.append("Phone number: "+res.getString(2)+"\n");
             buffer.append("Address: "+res.getString(1)+"\n\n");
         }
 

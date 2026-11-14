@@ -37,7 +37,7 @@ public class bill extends UiActivity {
 
 
                 if(buffer.indexOf(res.getColumnName(3))==-1){
-                    dd+="Delivery Date & time: " + res.getString(3) + "\n\n";
+                    dd+="Delivery date: " + res.getString(3) + "\n\n";
                 }
             }
 

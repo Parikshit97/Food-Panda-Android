@@ -26,9 +26,9 @@ public class custdbhandler extends UiActivity {
             String phoneet=phone.getText().toString();
             boolean isInserted= dba.insertData(nameet,phoneet,emailet);
             if(isInserted){
-                Toast.makeText(this,"Customer added!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,getString(R.string.message_28),Toast.LENGTH_SHORT).show();
             }else{
-                Toast.makeText(this,"Customer adding failed!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,getString(R.string.message_29),Toast.LENGTH_SHORT).show();
             }
     }
 
@@ -46,9 +46,9 @@ public class custdbhandler extends UiActivity {
         EditText name=(EditText)findViewById(R.id.etname);
         Integer res=dba.deleteData(name.getText().toString());
         if(res!=0){
-            Toast.makeText(this,"Customer deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_30),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Customer not deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_31),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -57,7 +57,7 @@ public class custdbhandler extends UiActivity {
         Cursor res=dba.getAllData();
         while(res.moveToNext()){
             buffer.append("Name: "+res.getString(0)+"\n");
-            buffer.append("Contact: "+res.getString(1)+"\n");
+            buffer.append("Phone number: "+res.getString(1)+"\n");
             buffer.append("EmailId: "+res.getString(2)+"\n\n");
         }
 

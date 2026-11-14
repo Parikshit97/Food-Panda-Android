@@ -54,7 +54,7 @@ for stem, title, category in SCREENS:
 
 html = """<!doctype html><html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Food Panda · UI review</title>
+<title>DineOps · UI review</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#fff9f6;color:#2c1722;font:16px/1.5 system-ui,-apple-system,sans-serif}
 header,main{max-width:1440px;margin:auto;padding:48px 32px}header{padding-bottom:12px}.brand{color:#d71660;font-weight:850;letter-spacing:-1px;font-size:25px}
@@ -67,13 +67,13 @@ button[aria-pressed=true]{background:#d71660;color:white;border-color:#d71660}bu
 details{margin-top:12px;border:1px solid #ebdce2;border-radius:14px;overflow:hidden;background:white}summary{padding:12px 16px;color:#934061;font-size:14px;cursor:pointer}details img{width:100%;display:block}footer{padding:40px 32px;text-align:center;color:#7a6570;font-size:13px}
 @media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){header,main{padding:28px 20px}.grid{grid-template-columns:1fr;gap:34px}h1{letter-spacing:-1.5px}.phone{max-width:420px;margin:auto}}
 </style>
-<header><div class="brand">food panda</div><div class="eyebrow">ANDROID APP · DESIGN REVIEW</div>
-<h1>A fresh look.<br>Every single screen.</h1>
-<p class="intro">A complete visual refresh with warm surfaces, bold pink accents, clearer forms, and a friendlier path from hungry to happy.</p>
+<header><div class="brand">DineOps</div><div class="eyebrow">ANDROID APP · DESIGN REVIEW</div>
+<h1>Android interface review</h1>
+<p class="intro">Screenshots of customer services, ordering, reservations, and administration tools.</p>
 <div class="tags"><span class="tag">19 app screens</span><span class="tag">2 dialogs</span><span class="tag">Actual emulator captures</span><span class="tag">Before &amp; after</span></div>
 <p class="intro">Tap any screenshot to inspect it at full resolution. Expand the original or the lower section beneath each screen.</p>
 <nav aria-label="Filter screens"><button data-filter="all" aria-pressed="true">All screens</button><button data-filter="customer" aria-pressed="false">Customer experience</button><button data-filter="admin" aria-pressed="false">Administration</button><button data-filter="dialog" aria-pressed="false">Dialogs</button></nav></header>
-<main><div class="grid">CARDS</div></main><footer>Captured from Food Panda running on Pixel 3a · Android 15 (API 35). No fabricated app screenshots.</footer>
+<main><div class="grid">CARDS</div></main><footer>Captured from DineOps running on Pixel 3a · Android 15 (API 35).</footer>
 <script>document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('[data-category]').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter)}));</script></html>
 """.replace("CARDS", "\n".join(cards))
 (SCREENSHOTS / "index.html").write_text(html)

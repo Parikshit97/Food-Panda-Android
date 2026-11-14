@@ -33,7 +33,7 @@ final class UiDialog {
         body.setPadding(0, padding, 0, padding);
         content.addView(body);
         Button close = new Button(context);
-        close.setText("Got it");
+        close.setText(context.getString(R.string.message_47));
         close.setAllCaps(false);
         close.setTextColor(Color.WHITE);
         close.setBackgroundResource(R.drawable.ui_button);

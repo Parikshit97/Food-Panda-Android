@@ -27,9 +27,9 @@ public class bookingview extends UiActivity {
         String hallet=hall.getText().toString();
         boolean isInserted= bdba.insertData(nameet,tableet,hallet,dateet.getText().toString());
         if(isInserted){
-            Toast.makeText(this,"Data added!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_5),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Data adding failed!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_6),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -49,9 +49,9 @@ public class bookingview extends UiActivity {
         EditText name=(EditText)findViewById(R.id.etname15);
         Integer res=bdba.deleteData(name.getText().toString());
         if(res!=0){
-            Toast.makeText(this,"Booking deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_7),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Booking not deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_8),Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -33,9 +33,9 @@ public class cartview extends UiActivity {
 
         Integer res=cdb.deleteData(etitem.getText().toString());
         if(res!=0){
-            Toast.makeText(this,"Data deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_13),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Data not deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_14),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -48,7 +48,7 @@ public class cartview extends UiActivity {
                 buffer.append("Name: " + res.getString(0) + "\n");
                 buffer.append("Item: " + res.getString(1) + "\n");
                 buffer.append("Quantity: " + res.getString(2) + "\n");
-                buffer.append("Delivery Date & time: " + res.getString(3) + "\n\n");
+                buffer.append("Delivery date: " + res.getString(3) + "\n\n");
             }
         }
 
@@ -58,9 +58,9 @@ public class cartview extends UiActivity {
 
     public void adbview(View view) {
         AlertDialog.Builder alertDialBuilder=new AlertDialog.Builder(this);
-        alertDialBuilder.setTitle("Generate Bill");
-        alertDialBuilder.setMessage("Proceed to checkout?");
-        alertDialBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        alertDialBuilder.setTitle(getString(R.string.message_15));
+        alertDialBuilder.setMessage(getString(R.string.message_16));
+        alertDialBuilder.setPositiveButton(getString(R.string.message_10), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 EditText etname=(EditText)findViewById(R.id.etname);
@@ -69,7 +69,7 @@ public class cartview extends UiActivity {
                 intent.putExtra(EXTRA_MESSAGE, message); startActivity(intent);
             }
         });
-        alertDialBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        alertDialBuilder.setNegativeButton(getString(R.string.message_17), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

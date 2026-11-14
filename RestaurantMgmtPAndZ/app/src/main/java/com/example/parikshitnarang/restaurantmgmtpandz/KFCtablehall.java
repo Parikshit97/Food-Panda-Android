@@ -39,15 +39,15 @@ public class KFCtablehall extends UiActivity implements DatePickerDialog.OnDateS
             }
         }
         AlertDialog.Builder alertDialBuilder=new AlertDialog.Builder(this);
-        alertDialBuilder.setTitle("TABLE/HALL VACANCY");
+        alertDialBuilder.setTitle(getString(R.string.message_9));
         alertDialBuilder.setMessage(buffer);
-        alertDialBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        alertDialBuilder.setPositiveButton(getString(R.string.message_10), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                dialog.cancel();
             }
         });
-//        alertDialBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//        alertDialBuilder.setNegativeButton(getString(R.string.message_17), new DialogInterface.OnClickListener() {
 //            @Override
 //            public void onClick(DialogInterface dialog, int which) {
 //                dialog.cancel();
@@ -70,9 +70,9 @@ public class KFCtablehall extends UiActivity implements DatePickerDialog.OnDateS
         TextView datetv=(TextView)findViewById(R.id.etdate);
         boolean result=bdba.insertData("Parikshit Narang",tableet.getText().toString(),hallnoet.getText().toString(),datetv.getText().toString());
         if(result==true) {
-            Toast.makeText(this, "Booking confirmed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.message_11), Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, "Booking not confirmed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.message_12), Toast.LENGTH_SHORT).show();
         }
     }
 

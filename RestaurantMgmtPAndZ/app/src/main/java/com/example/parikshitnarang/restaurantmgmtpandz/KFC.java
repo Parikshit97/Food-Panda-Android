@@ -140,9 +140,9 @@ public class KFC extends UiActivity implements DatePickerDialog.OnDateSetListene
         CartDatabase cdb=new CartDatabase(this);
         boolean res=cdb.insertData("Parikshit Narang",item.getText().toString(),qty.getText().toString(),dd.getText().toString(),total);
         if(res==true){
-            Toast.makeText(this,"Data sent", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_18), Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Data not sent", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_19), Toast.LENGTH_SHORT).show();
         }
     }
 
