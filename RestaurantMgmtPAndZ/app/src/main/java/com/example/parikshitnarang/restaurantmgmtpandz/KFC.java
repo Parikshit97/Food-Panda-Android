@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class KFC extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
+public class KFC extends UiActivity implements DatePickerDialog.OnDateSetListener {
 
     String total;
     int gtotal;
@@ -31,6 +31,10 @@ public class KFC extends AppCompatActivity implements DatePickerDialog.OnDateSet
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kfc);
         pdba=new PriceDatabase(this);
+        Spinner menu = (Spinner) findViewById(R.id.spinner1);
+        menu.setAdapter(new ArrayAdapter<String>(this,
+            android.R.layout.simple_spinner_dropdown_item,
+            new String[]{getString(R.string.ui_menu_prompt)}));
 
     }
 

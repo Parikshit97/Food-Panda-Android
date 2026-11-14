@@ -1,125 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".cartview">
-
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name"
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="name here..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/etname"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contact No.:"
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="contact here..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/etcontact"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Item"
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="item deletion..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/etdelete"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quantity"
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="qty update"
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/etupdate"
-            />
-    </TableRow>
-    <TableRow>
-        <Button
-            android:text="DELETE"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonDelete"
-            android:onClick="deleteClick"
-            />
-        <Button
-            android:text="VIEW"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonView"
-            android:onClick="viewClick"
-            />
-    </TableRow>
-    <TableRow>
-        <Button
-            android:text="Update"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/updatebutton"
-            android:onClick="updateqty"
-            />
-        <Button
-            android:text="Bill"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/billbutton"
-            android:onClick="adbview"
-            />
-    </TableRow>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        >
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="20sp"
-            android:id="@+id/tv1"
-            />
-    </ScrollView>
-
-
-
-</TableLayout>
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/ui_canvas" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button style="@style/SecondaryButton" android:text="@string/ui_17" android:layout_width="48dp" android:layout_height="48dp" android:padding="0dp" android:textSize="28sp" android:contentDescription="@string/ui_16" android:layout_marginEnd="14dp" android:onClick="navigateBack" />
+            <TextView style="@style/Brand" android:text="@string/ui_7" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Title" android:text="@string/ui_137" />
+        <Space android:layout_width="1dp" android:layout_height="8dp" />
+        <TextView style="@style/Body" android:text="@string/ui_138" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ui_card" android:padding="20dp">
+            <TextView style="@style/Label" android:text="@string/ui_13" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/etname" android:hint="@string/ui_127" android:inputType="textPersonName" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView style="@style/Label" android:text="@string/ui_11" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/etcontact" android:hint="@string/ui_21" android:inputType="phone" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView style="@style/Label" android:text="@string/ui_129" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/etdelete" android:hint="@string/ui_128" android:inputType="textCapSentences" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView style="@style/Label" android:text="@string/ui_130" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/etupdate" android:hint="@string/ui_69" android:inputType="number" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <Button style="@style/PrimaryButton" android:text="@string/ui_131" android:id="@+id/buttonView" android:onClick="viewClick" />
+            <Space android:layout_width="1dp" android:layout_height="12dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button style="@style/SecondaryButton" android:text="@string/ui_132" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="10dp" android:id="@+id/buttonDelete" android:onClick="deleteClick" />
+                <Button style="@style/SecondaryButton" android:text="@string/ui_133" android:layout_width="0dp" android:layout_weight="1" android:id="@+id/updatebutton" android:onClick="updateqty" />
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Section" android:text="@string/ui_134" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <TextView style="@style/Body" android:id="@+id/tv1" android:text="@string/ui_135" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+        <Space android:layout_width="1dp" android:layout_height="20dp" />
+        <Button style="@style/PrimaryButton" android:text="@string/ui_136" android:id="@+id/billbutton" android:onClick="adbview" />
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+    </LinearLayout>
+</ScrollView>

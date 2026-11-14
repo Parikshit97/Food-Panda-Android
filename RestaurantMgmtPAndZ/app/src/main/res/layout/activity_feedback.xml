@@ -1,42 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".feedback">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/feedbackresized"
-        />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="116dp"
-        android:text="Enter comments here..."
-        android:textSize="34sp"
-        android:textStyle="italic"
-        android:id="@+id/etxt1"
-        />
-
-    <ImageButton
-
-        android:src="@drawable/iconresized"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_height="45dp"
-        android:layout_width="45dp"
-        android:onClick="dialogopenforsubmission"
-        />
-
-
-
-</RelativeLayout>
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/ui_canvas" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button style="@style/SecondaryButton" android:text="@string/ui_17" android:layout_width="48dp" android:layout_height="48dp" android:padding="0dp" android:textSize="28sp" android:contentDescription="@string/ui_16" android:layout_marginEnd="14dp" android:onClick="navigateBack" />
+            <TextView style="@style/Brand" android:text="@string/ui_7" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Title" android:text="@string/ui_95" />
+        <Space android:layout_width="1dp" android:layout_height="8dp" />
+        <TextView style="@style/Body" android:text="@string/ui_96" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <ImageView android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ui_icon_heart" android:layout_gravity="center_horizontal" android:importantForAccessibility="no" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ui_card" android:padding="20dp">
+            <TextView style="@style/Section" android:text="@string/ui_91" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <TextView style="@style/Body" android:text="@string/ui_92" />
+            <Space android:layout_width="1dp" android:layout_height="20dp" />
+            <EditText style="@style/Field" android:id="@+id/etxt1" android:hint="@string/ui_93" android:inputType="textCapSentences|textMultiLine" android:singleLine="false" android:gravity="top" android:minLines="6" />
+            <Space android:layout_width="1dp" android:layout_height="20dp" />
+            <Button style="@style/PrimaryButton" android:text="@string/ui_94" android:onClick="dialogopenforsubmission" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+    </LinearLayout>
+</ScrollView>

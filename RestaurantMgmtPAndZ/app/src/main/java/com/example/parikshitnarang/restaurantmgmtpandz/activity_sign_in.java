@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class activity_sign_in extends AppCompatActivity {
+public class activity_sign_in extends UiActivity {
 
     DatabaseHelper1 mydbsignin;
     EditText editPhone, editName;

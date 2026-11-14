@@ -10,14 +10,7 @@ public class ContactDialogBox extends AppCompatDialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder =new AlertDialog.Builder(getActivity());
-        builder.setTitle("Contact Us").setMessage("Parikshit Narang\n+91-7503636097\nparikshit3097@gmail.com").setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-
-        return builder.create();
+        return UiDialog.create(getActivity(), "Let’s talk.",
+            "Parikshit Narang\n+91-7503636097\nparikshit3097@gmail.com");
     }
 }

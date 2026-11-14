@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class custdbhandler extends AppCompatActivity {
+public class custdbhandler extends UiActivity {
     DatabaseAdmin dba;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class restdbhandler extends AppCompatActivity {
+public class restdbhandler extends UiActivity {
     RestaurantDatabse rdba;
 
     @Override

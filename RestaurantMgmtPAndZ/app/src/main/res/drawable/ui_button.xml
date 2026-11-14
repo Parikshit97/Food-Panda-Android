@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#30E976A1">
+    <item android:drawable="@drawable/ui_solid" />
+</ripple>

@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class feedback extends AppCompatActivity {
+public class feedback extends UiActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

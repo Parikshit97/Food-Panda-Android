@@ -1,125 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".bookingview">
-
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name: "
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="name..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/etname15"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Table No.: "
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter table..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/ettable15"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hall No.: "
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter hall..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/ethall15"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date: "
-            android:textSize="25sp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter date..."
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/etdate15"
-            />
-    </TableRow>
-    <TableRow>
-        <Button
-            android:text="INSERT"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonInsert15"
-            android:onClick="insertClick"
-            />
-        <Button
-            android:text="UPDATE"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonUpdate15"
-            android:onClick="updateClick"
-            />
-    </TableRow>
-    <TableRow>
-        <Button
-            android:text="DELETE"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonDelete15"
-            android:onClick="deleteClick"
-            />
-        <Button
-            android:text="VIEW"
-            android:textSize="25sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonView15"
-            android:onClick="viewClick"
-            />
-    </TableRow>
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        >
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="20sp"
-            android:id="@+id/tv15"
-            />
-    </ScrollView>
-
-</TableLayout>
-
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/ui_canvas" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button style="@style/SecondaryButton" android:text="@string/ui_17" android:layout_width="48dp" android:layout_height="48dp" android:padding="0dp" android:textSize="28sp" android:contentDescription="@string/ui_16" android:layout_marginEnd="14dp" android:onClick="navigateBack" />
+            <TextView style="@style/Brand" android:text="@string/ui_7" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Title" android:text="@string/ui_125" />
+        <Space android:layout_width="1dp" android:layout_height="8dp" />
+        <TextView style="@style/Body" android:text="@string/ui_126" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ui_card" android:padding="20dp">
+            <TextView style="@style/Label" android:text="@string/ui_123" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/etname15" android:hint="@string/ui_123" android:inputType="textPersonName" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView style="@style/Label" android:text="@string/ui_84" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/ettable15" android:hint="@string/ui_84" android:inputType="number" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView style="@style/Label" android:text="@string/ui_82" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/ethall15" android:hint="@string/ui_82" android:inputType="number" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <TextView style="@style/Label" android:text="@string/ui_124" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <EditText style="@style/Field" android:id="@+id/etdate15" android:hint="@string/ui_124" android:inputType="date" />
+            <Space android:layout_width="1dp" android:layout_height="18dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button style="@style/PrimaryButton" android:text="@string/ui_105" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="10dp" android:id="@+id/buttonInsert15" android:onClick="insertClick" />
+                <Button style="@style/SecondaryButton" android:text="@string/ui_106" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="0dp" android:id="@+id/buttonUpdate15" android:onClick="updateClick" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="10dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button style="@style/SecondaryButton" android:text="@string/ui_107" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="10dp" android:id="@+id/buttonDelete15" android:onClick="deleteClick" />
+                <Button style="@style/SecondaryButton" android:text="@string/ui_108" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="0dp" android:id="@+id/buttonView15" android:onClick="viewClick" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="10dp" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Section" android:text="@string/ui_109" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <TextView style="@style/Body" android:id="@+id/tv15" android:text="@string/ui_110" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+    </LinearLayout>
+</ScrollView>

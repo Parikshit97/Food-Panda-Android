@@ -1,107 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".bill">
-
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name: "
-            android:textSize="25sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/tvname"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address: "
-            android:textSize="25sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/tvaddress"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contact: "
-            android:textSize="25sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/tvcont"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EmailID: "
-            android:textSize="25sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/tvemail"
-            />
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delivery Date: "
-            android:textSize="25sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="25sp"
-            android:id="@+id/tvdate"
-            />
-    </TableRow>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        android:id="@+id/btnforadb"
-        android:onClick="adbview"
-        />
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        >
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="20sp"
-            android:id="@+id/tv1"
-            />
-    </ScrollView>
-
-</TableLayout>
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/ui_canvas" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button style="@style/SecondaryButton" android:text="@string/ui_17" android:layout_width="48dp" android:layout_height="48dp" android:padding="0dp" android:textSize="28sp" android:contentDescription="@string/ui_16" android:layout_marginEnd="14dp" android:onClick="navigateBack" />
+            <TextView style="@style/Brand" android:text="@string/ui_7" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Title" android:text="@string/ui_146" />
+        <Space android:layout_width="1dp" android:layout_height="8dp" />
+        <TextView style="@style/Body" android:text="@string/ui_147" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ui_card" android:padding="20dp">
+            <TextView style="@style/Section" android:text="@string/ui_142" />
+            <Space android:layout_width="1dp" android:layout_height="20dp" />
+            <TextView style="@style/Label" android:text="@string/ui_139" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Body" android:id="@+id/tvname" android:text="@string/ui_140" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView style="@style/Label" android:text="@string/ui_141" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Body" android:id="@+id/tvaddress" android:text="@string/ui_140" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView style="@style/Label" android:text="@string/ui_11" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Body" android:id="@+id/tvcont" android:text="@string/ui_140" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView style="@style/Label" android:text="@string/ui_23" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Body" android:id="@+id/tvemail" android:text="@string/ui_140" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView style="@style/Label" android:text="@string/ui_73" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Body" android:id="@+id/tvdate" android:text="@string/ui_140" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Section" android:text="@string/ui_143" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <TextView style="@style/Body" android:id="@+id/tv1" android:text="@string/ui_144" android:padding="16dp" android:background="@drawable/ui_soft" android:textIsSelectable="true" />
+        <Space android:layout_width="1dp" android:layout_height="20dp" />
+        <Button style="@style/PrimaryButton" android:text="@string/ui_145" android:id="@+id/btnforadb" android:onClick="navigateBack" />
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+    </LinearLayout>
+</ScrollView>

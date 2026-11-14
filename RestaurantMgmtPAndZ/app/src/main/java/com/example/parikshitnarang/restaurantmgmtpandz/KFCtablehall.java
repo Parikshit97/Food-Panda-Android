@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class KFCtablehall extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
+public class KFCtablehall extends UiActivity implements DatePickerDialog.OnDateSetListener{
     HallTableDatabase pdba;
     BookingsDatabase bdba;
     @Override
