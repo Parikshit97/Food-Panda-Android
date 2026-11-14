@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class bill extends AppCompatActivity {
+public class bill extends UiActivity {
 
     CartDatabase cdb;
     @Override

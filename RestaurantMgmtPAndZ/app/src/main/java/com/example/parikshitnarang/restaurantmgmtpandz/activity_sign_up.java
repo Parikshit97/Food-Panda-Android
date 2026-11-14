@@ -16,7 +16,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Random;
 
-public class activity_sign_up extends AppCompatActivity {
+public class activity_sign_up extends UiActivity {
 
     private final String CHANNEL_ID="otp_message";
     private final int NOTIFICATION_ID=001;
@@ -37,6 +37,15 @@ public class activity_sign_up extends AppCompatActivity {
         EditText email=(EditText)findViewById(R.id.editEmail);
         EditText phone=(EditText)findViewById(R.id.editPhone);
         EditText otp=(EditText)findViewById(R.id.otp);
+        if (name.getText().toString().trim().isEmpty() || phone.getText().toString().trim().isEmpty()
+                || email.getText().toString().trim().isEmpty()) {
+            Toast.makeText(this, "Please enter your name, phone number and email.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (!otp.getText().toString().matches("[0-9]{6}") || randomNumber == 0) {
+            otp.setError("Get a verification code and enter all six digits.");
+            return;
+        }
         if(Integer.parseInt(otp.getText().toString())==randomNumber){
             Toast.makeText(this,"OTP Validation successfull...",Toast.LENGTH_SHORT).show();
             String nameet=name.getText().toString();
@@ -57,10 +66,21 @@ public class activity_sign_up extends AppCompatActivity {
     }
 
     public void generateOTP(View view) {
+        if (android.os.Build.VERSION.SDK_INT >= 33 &&
+                checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{android.Manifest.permission.POST_NOTIFICATIONS}, 1);
+            Toast.makeText(this, "Allow notifications, then tap Get verification code again.", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (android.os.Build.VERSION.SDK_INT >= 26) {
+            NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            manager.createNotificationChannel(new android.app.NotificationChannel(
+                CHANNEL_ID, "Account verification", NotificationManager.IMPORTANCE_DEFAULT));
+        }
         EditText name=(EditText)findViewById(R.id.editName);
         EditText phone=(EditText)findViewById(R.id.editPhone);
         Random random=new Random();
-        randomNumber= random.nextInt(1000000);
+        randomNumber= 100000 + random.nextInt(900000);
 
         NotificationCompat.Builder notificationBuilder=new NotificationCompat.Builder(activity_sign_up.this,CHANNEL_ID);
                 notificationBuilder.setContentTitle("Hey "+name.getText().toString()+", Your OTP is:");

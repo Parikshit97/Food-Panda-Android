@@ -1,59 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/woodbg"
-    tools:context=".admin">
-
-    <Button
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:text="CUSTOMER DATABASE"
-        android:textSize="25sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/custdb"
-        android:onClick="custdatabase"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TABLE/HALL DATABASE"
-        android:textSize="25sp"
-        android:id="@+id/orderdb"
-        android:onClick="orderdatabse"
-        android:layout_below="@+id/custdb"
-        />
-    <Button
-        android:text="RESTAURANT DATABASE"
-        android:textSize="25sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/restdb"
-        android:onClick="restdatabse"
-        android:layout_below="@+id/orderdb"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PRICE DATABASE"
-        android:textSize="25sp"
-        android:id="@+id/pricedb"
-        android:onClick="pricedatabase"
-        android:layout_below="@+id/restdb"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BOOKING DATABASE"
-        android:textSize="25sp"
-        android:id="@+id/bookdb"
-        android:onClick="bookingdb"
-        android:layout_below="@+id/pricedb"
-        />
-
-</RelativeLayout>
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/ui_canvas" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button style="@style/SecondaryButton" android:text="@string/ui_17" android:layout_width="48dp" android:layout_height="48dp" android:padding="0dp" android:textSize="28sp" android:contentDescription="@string/ui_16" android:layout_marginEnd="14dp" android:onClick="navigateBack" />
+            <TextView style="@style/Brand" android:text="@string/ui_7" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Title" android:text="@string/ui_103" />
+        <Space android:layout_width="1dp" android:layout_height="8dp" />
+        <TextView style="@style/Body" android:text="@string/ui_104" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Label" android:text="@string/ui_97" />
+        <Space android:layout_width="1dp" android:layout_height="16dp" />
+        <Button style="@style/SecondaryButton" android:text="@string/ui_98" android:gravity="start|center_vertical" android:drawableStart="@drawable/ui_icon_heart" android:drawablePadding="18dp" android:minHeight="76dp" android:id="@+id/custdb" android:onClick="custdatabase" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <Button style="@style/SecondaryButton" android:text="@string/ui_99" android:gravity="start|center_vertical" android:drawableStart="@drawable/ui_icon_plate" android:drawablePadding="18dp" android:minHeight="76dp" android:id="@+id/orderdb" android:onClick="orderdatabse" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <Button style="@style/SecondaryButton" android:text="@string/ui_100" android:gravity="start|center_vertical" android:drawableStart="@drawable/ui_icon_bag" android:drawablePadding="18dp" android:minHeight="76dp" android:id="@+id/restdb" android:onClick="restdatabse" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <Button style="@style/SecondaryButton" android:text="@string/ui_101" android:gravity="start|center_vertical" android:drawableStart="@drawable/ui_icon_gift" android:drawablePadding="18dp" android:minHeight="76dp" android:id="@+id/pricedb" android:onClick="pricedatabase" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <Button style="@style/SecondaryButton" android:text="@string/ui_102" android:gravity="start|center_vertical" android:drawableStart="@drawable/ui_icon_calendar" android:drawablePadding="18dp" android:minHeight="76dp" android:id="@+id/bookdb" android:onClick="bookingdb" />
+        <Space android:layout_width="1dp" android:layout_height="12dp" />
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
+    </LinearLayout>
+</ScrollView>

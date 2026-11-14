@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class cartview extends AppCompatActivity {
+public class cartview extends UiActivity {
     public static final String EXTRA_MESSAGE =
             "com.example.parikshitnarang.restaurantmgmtpandz.MESSAGE";
     CartDatabase cdb;

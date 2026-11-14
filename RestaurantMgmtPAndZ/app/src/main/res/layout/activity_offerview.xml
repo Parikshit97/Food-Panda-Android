@@ -1,120 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:fillViewport="true"
-    tools:context=".offerview">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:cardCornerRadius="4dp"
-        android:id="@+id/card_view1"
-        > <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TableRow>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Avail 10%discount in Barbeque Nation"
-            />
-        </TableRow>
-
-    </TableLayout>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:cardCornerRadius="4dp"
-        android:id="@+id/card_view2"
-        >
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TableRow>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Avail 10% discount on non-veg items" />
-            </TableRow>
-
-    </TableLayout> </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="4dp"
-            android:id="@+id/card_view3"
-            >
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TableRow>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Avail 10% discount on non-veg items" />
-                </TableRow>
-
-            </TableLayout> </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="4dp"
-            android:id="@+id/card_view4"
-            >
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TableRow>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Avail 10% discount on non-veg items" />
-                </TableRow>
-
-            </TableLayout> </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="4dp"
-            android:id="@+id/card_view5"
-            >
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TableRow>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Avail 10% discount on non-veg items" />
-                </TableRow>
-
-            </TableLayout> </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="4dp"
-            android:id="@+id/card_view6"
-            >
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TableRow>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Avail 10% discount on non-veg items" />
-                </TableRow>
-
-            </TableLayout> </android.support.v7.widget.CardView>
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/ui_canvas" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button style="@style/SecondaryButton" android:text="@string/ui_17" android:layout_width="48dp" android:layout_height="48dp" android:padding="0dp" android:textSize="28sp" android:contentDescription="@string/ui_16" android:layout_marginEnd="14dp" android:onClick="navigateBack" />
+            <TextView style="@style/Brand" android:text="@string/ui_7" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView style="@style/Title" android:text="@string/ui_50" />
+        <Space android:layout_width="1dp" android:layout_height="8dp" />
+        <TextView style="@style/Body" android:text="@string/ui_51" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ui_card" android:padding="20dp" android:id="@+id/card_view1">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView style="@style/Label" android:text="@string/ui_43" android:textColor="@color/ui_pink" android:layout_width="0dp" android:layout_weight="1" />
+                <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ui_icon_gift" android:importantForAccessibility="no" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView style="@style/Section" android:text="@string/ui_44" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Label" android:text="@string/ui_45" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <TextView style="@style/Body" android:text="@string/ui_46" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/ui_card" android:padding="20dp" android:id="@+id/card_view2">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView style="@style/Label" android:text="@string/ui_43" android:textColor="@color/ui_pink" android:layout_width="0dp" android:layout_weight="1" />
+                <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ui_icon_gift" android:importantForAccessibility="no" />
+            </LinearLayout>
+            <Space android:layout_width="1dp" android:layout_height="14dp" />
+            <TextView style="@style/Section" android:text="@string/ui_47" />
+            <Space android:layout_width="1dp" android:layout_height="6dp" />
+            <TextView style="@style/Label" android:text="@string/ui_48" />
+            <Space android:layout_width="1dp" android:layout_height="8dp" />
+            <TextView style="@style/Body" android:text="@string/ui_49" />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <Space android:layout_width="1dp" android:layout_height="28dp" />
     </LinearLayout>
 </ScrollView>

@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class pricedbhandler extends AppCompatActivity {
+public class pricedbhandler extends UiActivity {
 
     PriceDatabase pdba;
     @Override

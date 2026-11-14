@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class orderdbhandler extends AppCompatActivity {
+public class orderdbhandler extends UiActivity {
 
     HallTableDatabase pdba;
 

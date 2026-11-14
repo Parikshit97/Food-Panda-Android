@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends UiActivity {
 
     Button btnSignIn, btnSignUp, btnAdmin;
     TextView txtSlogan;

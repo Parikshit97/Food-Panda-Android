@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class tablehall extends AppCompatActivity {
+public class tablehall extends UiActivity {
     ListView lv;
 
     @Override
@@ -32,7 +32,7 @@ public class tablehall extends AppCompatActivity {
         list.add("Keventers");
 
         ArrayAdapter<String>adapter;
-        adapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, list);
+        adapter = new RestaurantAdapter(this, list);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

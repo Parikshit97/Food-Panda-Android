@@ -3,7 +3,7 @@ package com.example.parikshitnarang.restaurantmgmtpandz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class offerview extends AppCompatActivity {
+public class offerview extends UiActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

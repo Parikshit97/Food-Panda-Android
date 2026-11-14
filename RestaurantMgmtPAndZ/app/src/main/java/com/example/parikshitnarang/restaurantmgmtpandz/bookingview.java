@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class bookingview extends AppCompatActivity {
+public class bookingview extends UiActivity {
     BookingsDatabase bdba;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

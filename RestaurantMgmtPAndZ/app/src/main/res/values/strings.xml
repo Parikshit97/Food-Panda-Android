@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RestaurantMgmtPAndZ</string>
+    <string name="app_name">Food Panda</string>
     <string name="slogan">Finger Licking good\.</string>
     <string-array name="resturants">
         <item>Sizzler Ranch</item>

@@ -10,14 +10,7 @@ public class FeedbackDialogBox extends AppCompatDialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder =new AlertDialog.Builder(getActivity());
-        builder.setMessage("Thanks for your valuable feedback!").setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-
-        return builder.create();
+        return UiDialog.create(getActivity(), "Thanks for sharing.",
+            "Your feedback helps us make every meal a little better.");
     }
 }

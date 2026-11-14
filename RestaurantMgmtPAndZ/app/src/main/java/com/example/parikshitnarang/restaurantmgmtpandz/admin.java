@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class admin extends AppCompatActivity {
+public class admin extends UiActivity {
     DatabaseAdmin dba;
 
     @Override

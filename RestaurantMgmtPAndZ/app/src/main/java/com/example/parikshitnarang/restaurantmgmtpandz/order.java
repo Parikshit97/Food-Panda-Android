@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class order extends AppCompatActivity {
+public class order extends UiActivity {
     ListView lv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class order extends AppCompatActivity {
         list.add("Keventers");
 
         ArrayAdapter<String>adapter;
-        adapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, list);
+        adapter = new RestaurantAdapter(this, list);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
