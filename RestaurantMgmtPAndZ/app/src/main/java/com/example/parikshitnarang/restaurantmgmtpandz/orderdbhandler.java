@@ -28,9 +28,9 @@ public class orderdbhandler extends UiActivity {
         String hallet=hall.getText().toString();
         boolean isInserted= pdba.insertData(nameet,tableet,hallet);
         if(isInserted){
-            Toast.makeText(this,"Table/Hall info added!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_24),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Table/Hall info adding failed!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_25),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -48,9 +48,9 @@ public class orderdbhandler extends UiActivity {
         EditText name=(EditText)findViewById(R.id.etname14);
         Integer res=pdba.deleteData(name.getText().toString());
         if(res!=0){
-            Toast.makeText(this,"Table/Hall info deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_26),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Table/Hall info not deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_27),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -59,8 +59,8 @@ public class orderdbhandler extends UiActivity {
         Cursor res=pdba.getAllData();
         while(res.moveToNext()){
             buffer.append("Restaurant: "+res.getString(0)+"\n");
-            buffer.append("Table No.: "+res.getString(1)+"\n");
-            buffer.append("Hall.: "+res.getString(2)+"\n\n");
+            buffer.append("Table number: "+res.getString(1)+"\n");
+            buffer.append("Hall number: "+res.getString(2)+"\n\n");
         }
 
         TextView tv1=(TextView)findViewById(R.id.tv14);

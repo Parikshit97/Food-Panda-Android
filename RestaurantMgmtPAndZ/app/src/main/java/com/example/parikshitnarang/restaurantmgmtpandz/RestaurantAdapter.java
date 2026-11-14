@@ -20,7 +20,7 @@ public class RestaurantAdapter extends ArrayAdapter<String> {
         String name = getItem(position);
         ((TextView) row.findViewById(R.id.restaurant_name)).setText(name);
         ((TextView) row.findViewById(R.id.restaurant_detail)).setText(
-            "KFC".equals(name) ? "Menu & reservations available" : "Restaurant directory");
+            "KFC".equals(name) ? getContext().getString(R.string.message_48) : getContext().getString(R.string.message_49));
         return row;
     }
 }

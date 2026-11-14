@@ -27,8 +27,8 @@ public class admin extends UiActivity {
         StringBuffer buffer=new StringBuffer();
         while (res.moveToNext()){
             buffer.append("Name:"+ res.getString(0)+"\n");
-            buffer.append("Contact No.:"+ res.getString(1)+"\n");
-            buffer.append("Email Id:"+ res.getString(2)+"\n\n\n");
+            buffer.append("Phone number: "+ res.getString(1)+"\n");
+            buffer.append("Email address: "+ res.getString(2)+"\n\n\n");
         }
 
         tv.setText(buffer);

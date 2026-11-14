@@ -37,21 +37,21 @@ public class activity_sign_in extends UiActivity {
 
             if(name.equals(editName.getText().toString())){
                 if(!pswd.equals(editPhone.getText().toString())){
-                    Toast.makeText(this,"Invalid Password!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,getString(R.string.message_32),Toast.LENGTH_SHORT).show();
                     flag=1;
                 }
             }
 
             if(pswd.equals(editPhone.getText().toString())) {
                 if (!name.equals(editName.getText().toString())) {
-                    Toast.makeText(this, "Invalid Username!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.message_33), Toast.LENGTH_SHORT).show();
                     flag=1;
                 }
             }
 
             if(name.equals(editName.getText().toString())){
                 if(pswd.equals(editPhone.getText().toString())){
-                    Toast.makeText(this,"Sign In succesfull!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,getString(R.string.message_34),Toast.LENGTH_SHORT).show();
                     flag=1;
                     Intent foruseroptions=new Intent(this,useroptions.class);
                     startActivity(foruseroptions);
@@ -61,7 +61,7 @@ public class activity_sign_in extends UiActivity {
         }
 
         if(flag==0){
-            Toast.makeText(this,"Invalid Sign In Credentials!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_35),Toast.LENGTH_SHORT).show();
         }
 
 

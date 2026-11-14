@@ -10,7 +10,7 @@ public class FeedbackDialogBox extends AppCompatDialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        return UiDialog.create(getActivity(), "Thanks for sharing.",
-            "Your feedback helps us make every meal a little better.");
+        return UiDialog.create(getActivity(), getString(R.string.message_45),
+            getString(R.string.message_46));
     }
 }

@@ -39,28 +39,28 @@ public class activity_sign_up extends UiActivity {
         EditText otp=(EditText)findViewById(R.id.otp);
         if (name.getText().toString().trim().isEmpty() || phone.getText().toString().trim().isEmpty()
                 || email.getText().toString().trim().isEmpty()) {
-            Toast.makeText(this, "Please enter your name, phone number and email.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.message_36), Toast.LENGTH_SHORT).show();
             return;
         }
         if (!otp.getText().toString().matches("[0-9]{6}") || randomNumber == 0) {
-            otp.setError("Get a verification code and enter all six digits.");
+            otp.setError(getString(R.string.message_37));
             return;
         }
         if(Integer.parseInt(otp.getText().toString())==randomNumber){
-            Toast.makeText(this,"OTP Validation successfull...",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_38),Toast.LENGTH_SHORT).show();
             String nameet=name.getText().toString();
             String emailet=email.getText().toString();
             String phoneet=phone.getText().toString();
            boolean isInserted= dba.insertData(nameet,phoneet,emailet);
 //           admin newadmin=new admin(dba);
            if(isInserted){
-               Toast.makeText(this,"Data sent to the server successfull!",Toast.LENGTH_SHORT).show();
+               Toast.makeText(this,getString(R.string.message_39),Toast.LENGTH_SHORT).show();
            }else{
-               Toast.makeText(this,"Data sent to the server failed!",Toast.LENGTH_SHORT).show();
+               Toast.makeText(this,getString(R.string.message_40),Toast.LENGTH_SHORT).show();
            }
 
         }else{
-            Toast.makeText(this,"OTP Validation failed...",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_41),Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -69,13 +69,13 @@ public class activity_sign_up extends UiActivity {
         if (android.os.Build.VERSION.SDK_INT >= 33 &&
                 checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{android.Manifest.permission.POST_NOTIFICATIONS}, 1);
-            Toast.makeText(this, "Allow notifications, then tap Get verification code again.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.message_42), Toast.LENGTH_LONG).show();
             return;
         }
         if (android.os.Build.VERSION.SDK_INT >= 26) {
             NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             manager.createNotificationChannel(new android.app.NotificationChannel(
-                CHANNEL_ID, "Account verification", NotificationManager.IMPORTANCE_DEFAULT));
+                CHANNEL_ID, getString(R.string.message_43), NotificationManager.IMPORTANCE_DEFAULT));
         }
         EditText name=(EditText)findViewById(R.id.editName);
         EditText phone=(EditText)findViewById(R.id.editPhone);
@@ -83,7 +83,7 @@ public class activity_sign_up extends UiActivity {
         randomNumber= 100000 + random.nextInt(900000);
 
         NotificationCompat.Builder notificationBuilder=new NotificationCompat.Builder(activity_sign_up.this,CHANNEL_ID);
-                notificationBuilder.setContentTitle("Hey "+name.getText().toString()+", Your OTP is:");
+                notificationBuilder.setContentTitle(getString(R.string.verification_notification_title));
                 notificationBuilder.setSmallIcon(R.drawable.iconresized);
                 notificationBuilder.setContentText(""+randomNumber);
                 notificationBuilder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
@@ -93,20 +93,3 @@ public class activity_sign_up extends UiActivity {
 
     }
 }
-//    EditText name=(EditText)findViewById(R.id.editName);
-//    EditText phone=(EditText)findViewById(R.id.editPhone);
-//    Random random=new Random();
-//    int radint=random.nextInt(1000000);
-//    NotificationCompat.Builder builder =
-//            new NotificationCompat.Builder(this)
-//                    .setContentTitle("Hey "+name.getText().toString()+" OTP is here:")
-//                    .setContentText(""+Integer.toString(radint));
-//
-//    Intent notificationIntent = new Intent(this, activity_sign_up.class);
-//    PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
-//            PendingIntent.FLAG_UPDATE_CURRENT);
-//        builder.setContentIntent(contentIntent);
-//
-//                // Add as notification
-//                NotificationManager manager = (NotificationManager) getSystemService(getApplicationContext().NOTIFICATION_SERVICE);
-//                manager.notify(0, builder.build());

@@ -1,6 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Food Panda</string>
-    <string name="slogan">Finger Licking good\.</string>
+    <string name="app_name">DineOps</string>
+    <string name="slogan">Orders and reservations</string>
     <string-array name="resturants">
         <item>Sizzler Ranch</item>
         <item>Barbeque Nation</item>

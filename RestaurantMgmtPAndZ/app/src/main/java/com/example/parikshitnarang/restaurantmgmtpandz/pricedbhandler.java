@@ -27,9 +27,9 @@ public class pricedbhandler extends UiActivity {
         String priceet=price.getText().toString();
         boolean isInserted= pdba.insertData(nameet,itemet,priceet);
         if(isInserted){
-            Toast.makeText(this,"Item and Price added!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_20),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Item and Price adding failed!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_21),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -47,9 +47,9 @@ public class pricedbhandler extends UiActivity {
         EditText name=(EditText)findViewById(R.id.etname);
         Integer res=pdba.deleteData(name.getText().toString());
         if(res!=0){
-            Toast.makeText(this,"Item deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_22),Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this,"Item not deleted!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.message_23),Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -50,7 +50,7 @@ public class resturantinfo extends UiActivity {
                     Cursor res=rdba.getAllData();
                     while(res.moveToNext()){
                         buffer.append("Restaurant: "+res.getString(0)+"\n");
-                        buffer.append("Contact: "+res.getString(2)+"\n");
+                        buffer.append("Phone number: "+res.getString(2)+"\n");
                         buffer.append("Address: "+res.getString(1)+"\n\n");
                     }
 
