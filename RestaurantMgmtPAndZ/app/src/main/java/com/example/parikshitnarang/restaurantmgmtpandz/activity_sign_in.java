@@ -17,7 +17,7 @@ public class activity_sign_in extends UiActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
         mydbsignin=new DatabaseHelper1(this);
-        mydbsignin.insertData("Parikshit Narang","7503636097");
+        mydbsignin.insertData("Demo Customer","2025550100");
     }
 
     public void verify(View view) {

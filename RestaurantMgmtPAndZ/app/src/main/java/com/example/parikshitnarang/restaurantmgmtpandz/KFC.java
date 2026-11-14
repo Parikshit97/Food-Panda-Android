@@ -138,7 +138,7 @@ public class KFC extends UiActivity implements DatePickerDialog.OnDateSetListene
         TextView dd=(TextView) findViewById(R.id.etdate);
 
         CartDatabase cdb=new CartDatabase(this);
-        boolean res=cdb.insertData("Parikshit Narang",item.getText().toString(),qty.getText().toString(),dd.getText().toString(),total);
+        boolean res=cdb.insertData("Demo Customer",item.getText().toString(),qty.getText().toString(),dd.getText().toString(),total);
         if(res==true){
             Toast.makeText(this,getString(R.string.message_18), Toast.LENGTH_SHORT).show();
         }else{

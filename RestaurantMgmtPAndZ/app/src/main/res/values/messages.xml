@@ -50,4 +50,5 @@
     <string name="message_48">Menu and reservations available</string>
     <string name="message_49">Restaurant directory</string>
     <string name="verification_notification_title">DineOps verification code</string>
+    <string name="support_contact_details">For order or reservation assistance, contact the selected restaurant.</string>
 </resources>

@@ -15,7 +15,6 @@ public class admin extends UiActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
         dba=new DatabaseAdmin(this);
-//        dba.insertData("Pari","7503636097","abc@xyz.com");
     }
 
     public void viewData(View view) {

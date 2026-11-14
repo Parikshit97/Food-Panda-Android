@@ -11,6 +11,6 @@ public class ContactDialogBox extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         return UiDialog.create(getActivity(), getString(R.string.message_44),
-            "Parikshit Narang\n+91-7503636097\nparikshit3097@gmail.com");
+            getString(R.string.support_contact_details));
     }
 }

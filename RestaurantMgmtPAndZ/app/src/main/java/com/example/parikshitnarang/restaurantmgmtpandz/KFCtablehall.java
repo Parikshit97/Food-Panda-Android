@@ -68,7 +68,7 @@ public class KFCtablehall extends UiActivity implements DatePickerDialog.OnDateS
         EditText tableet=(EditText)findViewById(R.id.ettableno);
         EditText hallnoet=(EditText)findViewById(R.id.ethallno);
         TextView datetv=(TextView)findViewById(R.id.etdate);
-        boolean result=bdba.insertData("Parikshit Narang",tableet.getText().toString(),hallnoet.getText().toString(),datetv.getText().toString());
+        boolean result=bdba.insertData("Demo Customer",tableet.getText().toString(),hallnoet.getText().toString(),datetv.getText().toString());
         if(result==true) {
             Toast.makeText(this, getString(R.string.message_11), Toast.LENGTH_SHORT).show();
         }else{
